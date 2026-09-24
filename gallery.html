@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Wavi's Mindchive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <p class="pequeno">wavi's mindchive</p>
+
+        <p class="decoracion">♡</p>
+
+        <h1>gallery</h1>
+
+        <p class="frase">
+            pequeños recuerdos que queremos guardar
+        </p>
+
+
+        <!-- =================================================
+             BANNER DECORATIVO
+        ================================================== -->
+
+        <div class="gallery-banner">
+
+            <div class="gallery-banner-decoracion">
+                ♡
+            </div>
+
+            <div class="gallery-banner-texto">
+                <span>little moments</span>
+                <strong>our memories</strong>
+            </div>
+
+            <div class="gallery-banner-decoracion">
+                ✦
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             CONTROLES
+        ================================================== -->
+
+        <div class="gallery-controles">
+
+            <span
+                class="contador-gallery"
+                id="contador-gallery"
+            >
+                0 photos
+            </span>
+
+            <button
+                type="button"
+                class="orden-gallery activo"
+                id="orden-gallery"
+            >
+                más recientes
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             GALERÍA
+        ================================================== -->
+
+        <div
+            class="gallery-grid"
+            id="gallery-grid"
+        ></div>
+
+
+        <!-- =================================================
+             ESTADO VACÍO
+        ================================================== -->
+
+        <div
+            class="sin-gallery"
+            id="sin-gallery"
+        >
+
+            <span>♡</span>
+
+            <p>
+                todavía no hay recuerdos aquí
+            </p>
+
+            <small>
+                agreguen una foto para comenzar
+            </small>
+
+        </div>
+
+
+        <!-- =================================================
+             BOTÓN AGREGAR
+        ================================================== -->
+
+        <button
+            type="button"
+            class="agregar"
+            id="boton-agregar-gallery"
+        >
+            + agregar foto
+        </button>
+
+
+        <!-- =================================================
+             FORMULARIO
+        ================================================== -->
+
+        <form
+            class="formulario-gallery"
+            id="formulario-gallery"
+        >
+
+            <label for="imagen-gallery">
+                Foto
+            </label>
+
+            <label
+                class="boton-portada"
+                for="imagen-gallery"
+            >
+                ♡ elegir foto
+            </label>
+
+            <input
+                type="file"
+                id="imagen-gallery"
+                accept="image/*"
+                required
+            >
+
+            <div
+                class="vista-previa-gallery"
+                id="vista-previa-gallery"
+            ></div>
+
+
+            <label for="fecha-gallery">
+                Fecha
+            </label>
+
+            <input
+                type="date"
+                id="fecha-gallery"
+                required
+            >
+
+
+            <label for="descripcion-gallery">
+                Descripción
+            </label>
+
+            <textarea
+                id="descripcion-gallery"
+                placeholder="Un pequeño recuerdo de este momento..."
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="guardar"
+                id="guardar-gallery"
+            >
+                guardar foto
+            </button>
+
+        </form>
+
+
+        <a
+            class="volver"
+            href="index.html"
+        >
+            ← volver al inicio
+        </a>
+
+    </main>
+
+
+    <!-- =====================================================
+         LIGHTBOX
+    ====================================================== -->
+
+    <div
+        class="gallery-lightbox"
+        id="gallery-lightbox"
+    >
+
+        <button
+            type="button"
+            class="cerrar-lightbox"
+            id="cerrar-lightbox"
+            aria-label="Cerrar imagen"
+        >
+            ×
+        </button>
+
+        <img
+            id="lightbox-imagen"
+            src=""
+            alt=""
+        >
+
+        <p
+            class="lightbox-descripcion"
+            id="lightbox-descripcion"
+        ></p>
+
+    </div>
+
+
+    <script src="gallery.js"></script>
+
+</body>
+</html>

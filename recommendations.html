@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations — Wavi's Mindchive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="pagina">
+
+        <p class="pequeno">audiovisuals</p>
+        <p class="decoracion">✦</p>
+
+        <h1>recommendations</h1>
+
+        <p class="frase">
+            cosas que queremos recomendarnos o ver juntas
+        </p>
+
+        <div class="recommendation-controles">
+
+            <span class="contador-recommendations" id="contador-recommendations">
+                0 recommendations
+            </span>
+
+            <div class="filtros-recommendations">
+
+                <button
+                    type="button"
+                    class="filtro-recommendation activo"
+                    data-filtro="todas"
+                >
+                    todas
+                </button>
+
+                <button
+                    type="button"
+                    class="filtro-recommendation"
+                    data-filtro="para-vale"
+                >
+                    para vale
+                </button>
+
+                <button
+                    type="button"
+                    class="filtro-recommendation"
+                    data-filtro="para-javi"
+                >
+                    para javi
+                </button>
+
+                <button
+                    type="button"
+                    class="filtro-recommendation"
+                    data-filtro="para-juntas"
+                >
+                    para ver juntas
+                </button>
+
+            </div>
+
+        </div>
+
+        <div
+            class="lista-recommendations"
+            id="lista-recommendations"
+        ></div>
+
+        <div
+            class="sin-recommendations"
+            id="sin-recommendations"
+        >
+            <span>✦</span>
+
+            <p>
+                todavía no hay recomendaciones
+            </p>
+
+            <small>
+                agreguen algo que quieran recomendarse
+            </small>
+        </div>
+
+        <button
+            type="button"
+            class="agregar"
+            id="boton-agregar-recommendation"
+        >
+            + agregar recomendación
+        </button>
+
+        <form
+            class="formulario-recommendation"
+            id="formulario-recommendation"
+        >
+
+            <label for="nombre-recommendation">
+                Nombre
+            </label>
+
+            <input
+                type="text"
+                id="nombre-recommendation"
+                placeholder="Ej: How I Met Your Mother"
+                required
+            >
+
+            <label for="tipo-recommendation">
+                Tipo
+            </label>
+
+            <select id="tipo-recommendation">
+
+                <option value="serie">
+                    serie
+                </option>
+
+                <option value="pelicula">
+                    película
+                </option>
+
+                <option value="anime">
+                    anime
+                </option>
+
+                <option value="documental">
+                    documental
+                </option>
+
+                <option value="otro">
+                    otro
+                </option>
+
+            </select>
+
+            <label for="categoria-recommendation">
+                ¿Para quién es?
+            </label>
+
+            <select id="categoria-recommendation">
+
+                <option value="para-vale">
+                    para vale
+                </option>
+
+                <option value="para-javi">
+                    para javi
+                </option>
+
+                <option value="para-juntas">
+                    para ver juntas
+                </option>
+
+            </select>
+
+            <label for="recomendado-por">
+                Recomendada por
+            </label>
+
+            <select id="recomendado-por">
+
+                <option value="vale">
+                    vale
+                </option>
+
+                <option value="javi">
+                    javi
+                </option>
+
+            </select>
+
+            <label for="portada-recommendation">
+                Portada
+            </label>
+
+            <label
+                class="boton-portada"
+                for="portada-recommendation"
+            >
+                ♡ elegir portada
+            </label>
+
+            <input
+                type="file"
+                id="portada-recommendation"
+                accept="image/*"
+            >
+
+            <div
+                class="vista-previa-recommendation"
+                id="vista-previa-recommendation"
+            ></div>
+
+            <label for="nota-recommendation">
+                Nota
+            </label>
+
+            <textarea
+                id="nota-recommendation"
+                placeholder="¿Por qué se la recomiendan?"
+            ></textarea>
+
+            <button
+                type="submit"
+                class="guardar"
+                id="guardar-recommendation"
+            >
+                guardar recomendación
+            </button>
+
+        </form>
+
+        <a
+            class="volver"
+            href="audiovisuals.html"
+        >
+            ← volver a audiovisuals
+        </a>
+
+    </main>
+
+    <script src="recommendations.js"></script>
+
+</body>
+</html>

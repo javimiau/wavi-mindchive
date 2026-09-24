@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations — Wavi's Mindchive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <p class="pequeno">wavi's mindchive</p>
+
+        <p class="decoracion">♡</p>
+
+        <h1>locations</h1>
+
+        <p class="frase">
+            lugares que forman parte de nuestra historia
+        </p>
+
+
+        <!-- =================================================
+             MAPA DECORATIVO
+        ================================================== -->
+
+        <div class="mapa-locations">
+            <img
+                src="images/stardew-map.jpg"
+                alt="Mapa decorativo de Stardew Valley"
+            >
+        </div>
+
+
+        <!-- =================================================
+             PLACES WE'VE BEEN
+        ================================================== -->
+
+        <section class="seccion-locations">
+
+            <div class="titulo-seccion-locations">
+                <span>♡</span>
+
+                <div>
+                    <h2>places we've been</h2>
+
+                    <p>
+                        lugares que ya compartimos
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="lista-locations"
+                id="lista-visitados"
+            ></div>
+
+        </section>
+
+
+        <!-- =================================================
+             PLACES WE WANT TO VISIT
+        ================================================== -->
+
+        <section class="seccion-locations">
+
+            <div class="titulo-seccion-locations">
+                <span>✦</span>
+
+                <div>
+                    <h2>places we want to visit</h2>
+
+                    <p>
+                        lugares que algún día queremos conocer
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="lista-locations"
+                id="lista-por-visitar"
+            ></div>
+
+        </section>
+
+
+        <!-- =================================================
+             MENSAJE VACÍO
+        ================================================== -->
+
+        <div
+            class="sin-locations"
+            id="sin-locations"
+        >
+            <span>♡</span>
+
+            <p>
+                todavía no hay lugares guardados
+            </p>
+
+            <small>
+                agreguen un lugar para comenzar
+            </small>
+        </div>
+
+
+        <!-- =================================================
+             BOTÓN
+        ================================================== -->
+
+        <button
+            type="button"
+            class="agregar"
+            id="boton-agregar-location"
+        >
+            + agregar lugar
+        </button>
+
+
+        <!-- =================================================
+             FORMULARIO
+        ================================================== -->
+
+        <form
+            class="formulario-location"
+            id="formulario-location"
+        >
+
+            <label for="nombre-location">
+                Nombre del lugar
+            </label>
+
+            <input
+                type="text"
+                id="nombre-location"
+                placeholder="Ej: Concepción"
+                required
+            >
+
+
+            <label for="ubicacion-location">
+                Ubicación
+            </label>
+
+            <input
+                type="text"
+                id="ubicacion-location"
+                placeholder="Ej: Chile"
+                required
+            >
+
+
+            <label for="seccion-location">
+                ¿Dónde va?
+            </label>
+
+            <select id="seccion-location">
+
+                <option value="visitados">
+                    places we've been
+                </option>
+
+                <option value="por-visitar">
+                    places we want to visit
+                </option>
+
+            </select>
+
+
+            <label for="nota-location">
+                Nota
+            </label>
+
+            <textarea
+                id="nota-location"
+                placeholder="Un recuerdo, algo que queremos hacer ahí..."
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="guardar"
+                id="guardar-location"
+            >
+                guardar lugar
+            </button>
+
+        </form>
+
+
+        <a
+            class="volver"
+            href="index.html"
+        >
+            ← volver al inicio
+        </a>
+
+    </main>
+
+
+    <script src="locations.js"></script>
+
+</body>
+</html>

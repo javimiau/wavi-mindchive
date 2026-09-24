@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar — Wavi's Mindchive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="pagina">
+
+        <p class="pequeno">wavi's mindchive</p>
+        <p class="decoracion">♡</p>
+        <h1>calendar</h1>
+        <p class="frase">nuestro pequeño calendario compartido</p>
+
+        <div class="calendar-controles">
+
+            <div class="calendar-navegacion">
+                <button type="button" id="mes-anterior" aria-label="Mes anterior">
+                    ←
+                </button>
+
+                <h2 class="calendar-mes" id="calendar-mes">
+                    septiembre 2026
+                </h2>
+
+                <button type="button" id="mes-siguiente" aria-label="Mes siguiente">
+                    →
+                </button>
+            </div>
+
+        </div>
+
+        <div class="calendar-semana">
+            <span>lun</span>
+            <span>mar</span>
+            <span>mié</span>
+            <span>jue</span>
+            <span>vie</span>
+            <span>sáb</span>
+            <span>dom</span>
+        </div>
+
+        <div class="calendar-grid" id="calendar-grid"></div>
+
+        <section class="calendar-detalle">
+
+            <h2 class="calendar-detalle-titulo" id="fecha-seleccionada">
+                eventos del día
+            </h2>
+
+            <div class="lista-eventos-calendar" id="lista-eventos-calendar"></div>
+
+            <div class="sin-eventos-calendar" id="sin-eventos-calendar">
+                <p>no hay eventos para este día</p>
+                <small>pueden agregar algo especial al calendario ♡</small>
+            </div>
+
+            <button
+                type="button"
+                class="agregar"
+                id="boton-agregar-calendar"
+            >
+                + agregar evento
+            </button>
+
+            <form
+                class="formulario-calendar"
+                id="formulario-calendar"
+            >
+
+                <label for="nombre-calendar">
+                    Nombre del evento
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre-calendar"
+                    placeholder="Ej: ir al cine"
+                    required
+                >
+
+                <label for="fecha-calendar">
+                    Fecha
+                </label>
+
+                <input
+                    type="date"
+                    id="fecha-calendar"
+                    required
+                >
+
+                <label for="hora-calendar">
+                    Hora
+                </label>
+
+                <input
+                    type="time"
+                    id="hora-calendar"
+                >
+
+                <label for="tipo-calendar">
+                    Tipo
+                </label>
+
+                <select id="tipo-calendar">
+                    <option value="date">♡ date</option>
+                    <option value="birthday">♢ birthday</option>
+                    <option value="special">✦ special</option>
+                    <option value="movie">▸ movie / series</option>
+                    <option value="music">♫ music</option>
+                    <option value="study">✎ study</option>
+                    <option value="plan">☕ plan</option>
+                    <option value="other">☆ other</option>
+                </select>
+
+                <label for="agregado-calendar">
+                    Agregado por
+                </label>
+
+                <select id="agregado-calendar">
+                    <option value="vale">Vale</option>
+                    <option value="javi">Javi</option>
+                </select>
+
+                <label for="nota-calendar">
+                    Nota
+                </label>
+
+                <textarea
+                    id="nota-calendar"
+                    placeholder="Una pequeña nota sobre este evento..."
+                ></textarea>
+
+                <button
+                    type="submit"
+                    class="guardar"
+                    id="guardar-calendar"
+                >
+                    guardar evento
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="calendar-leyenda">
+
+            <h2>tipos de eventos</h2>
+
+            <div class="lista-leyenda-calendar">
+
+                <div class="leyenda-calendar">
+                    <span>♡</span>
+                    <p>date</p>
+                </div>
+
+                <div class="leyenda-calendar">
+                    <span>♢</span>
+                    <p>birthday</p>
+                </div>
+
+                <div class="leyenda-calendar">
+                    <span>✦</span>
+                    <p>special</p>
+                </div>
+
+                <div class="leyenda-calendar">
+                    <span>▸</span>
+                    <p>movie / series</p>
+                </div>
+
+                <div class="leyenda-calendar">
+                    <span>♫</span>
+                    <p>music</p>
+                </div>
+
+                <div class="leyenda-calendar">
+                    <span>✎</span>
+                    <p>study</p>
+                </div>
+
+                <div class="leyenda-calendar">
+                    <span>☕</span>
+                    <p>plan</p>
+                </div>
+
+                <div class="leyenda-calendar">
+                    <span>☆</span>
+                    <p>other</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <a class="volver" href="index.html">
+            ← volver al inicio
+        </a>
+
+    </main>
+
+    <script src="calendar.js"></script>
+
+</body>
+</html>

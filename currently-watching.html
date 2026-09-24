@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Currently Watching — Wavi's Mindchive
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="pagina">
+
+        <p class="pequeno">
+            audiovisuals
+        </p>
+
+        <p class="decoracion">
+            ♡
+        </p>
+
+        <h1>
+            currently watching
+        </h1>
+
+        <p class="frase">
+            series y películas que estamos viendo juntas
+        </p>
+
+
+        <!-- CONTROLES -->
+
+        <div class="watching-controles">
+
+            <span
+                class="contador-watching"
+                id="contador-watching"
+            >
+                0 audiovisuals
+            </span>
+
+
+            <div class="filtros-watching">
+
+                <button
+                    type="button"
+                    class="filtro-watching activo"
+                    data-filtro="todos"
+                >
+                    todos
+                </button>
+
+                <button
+                    type="button"
+                    class="filtro-watching"
+                    data-filtro="viendo"
+                >
+                    viendo
+                </button>
+
+                <button
+                    type="button"
+                    class="filtro-watching"
+                    data-filtro="pausada"
+                >
+                    pausadas
+                </button>
+
+                <button
+                    type="button"
+                    class="filtro-watching"
+                    data-filtro="completada"
+                >
+                    completadas
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- LISTA DE AUDIOVISUALES -->
+
+        <div
+            class="lista-watching"
+            id="lista-watching"
+        ></div>
+
+
+        <!-- MENSAJE CUANDO NO HAY CONTENIDO -->
+
+        <div
+            class="sin-watching"
+            id="sin-watching"
+        >
+
+            <span>
+                ♡
+            </span>
+
+            <p>
+                todavía no hay nada aquí
+            </p>
+
+            <small>
+                agreguen una serie o película para comenzar
+            </small>
+
+        </div>
+
+
+        <!-- BOTÓN AGREGAR -->
+
+        <button
+            type="button"
+            class="agregar"
+            id="boton-agregar-watching"
+        >
+            + agregar audiovisual
+        </button>
+
+
+        <!-- FORMULARIO -->
+
+        <form
+            class="formulario-watching"
+            id="formulario-watching"
+        >
+
+            <label for="nombre-watching">
+                Nombre
+            </label>
+
+            <input
+                type="text"
+                id="nombre-watching"
+                placeholder="Ej: The Walking Dead"
+                required
+            >
+
+
+            <label for="tipo-watching">
+                Tipo
+            </label>
+
+            <select id="tipo-watching">
+
+                <option value="serie">
+                    serie
+                </option>
+
+                <option value="pelicula">
+                    película
+                </option>
+
+            </select>
+
+
+            <!-- ESTE CAMPO SOLO APARECE PARA SERIES -->
+
+            <div
+                class="campo-serie"
+                id="campo-serie"
+            >
+
+                <label for="progreso-watching">
+                    ¿En qué capítulo vamos?
+                </label>
+
+                <input
+                    type="text"
+                    id="progreso-watching"
+                    placeholder="Ej: temporada 1 · capítulo 7"
+                >
+
+            </div>
+
+
+            <label for="estado-watching">
+                Estado
+            </label>
+
+            <select id="estado-watching">
+
+                <option value="viendo">
+                    viendo
+                </option>
+
+                <option value="pausada">
+                    pausada
+                </option>
+
+                <option value="completada">
+                    completada
+                </option>
+
+            </select>
+
+
+            <label for="portada-watching">
+                Portada
+            </label>
+
+            <label
+                class="boton-portada"
+                for="portada-watching"
+            >
+                ♡ elegir portada
+            </label>
+
+            <input
+                type="file"
+                id="portada-watching"
+                accept="image/*"
+            >
+
+
+            <div
+                class="vista-previa-watching"
+                id="vista-previa-watching"
+            ></div>
+
+
+            <label for="nota-watching">
+                Nota
+            </label>
+
+            <textarea
+                id="nota-watching"
+                placeholder="Una pequeña nota sobre lo que estamos viendo..."
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="guardar"
+                id="guardar-watching"
+            >
+                guardar audiovisual
+            </button>
+
+        </form>
+
+
+        <a
+            class="volver"
+            href="audiovisuals.html"
+        >
+            ← volver a audiovisuals
+        </a>
+
+    </main>
+
+
+    <script src="currently-watching.js"></script>
+
+</body>
+
+</html>

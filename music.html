@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music — Wavi's Mindchive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <p class="pequeno">wavi's mindchive</p>
+
+        <p class="decoracion">♫</p>
+
+        <h1>music</h1>
+
+        <p class="frase">
+            canciones que queremos guardar entre nosotras
+        </p>
+
+
+        <!-- =================================================
+             SONGS FOR VALE
+        ================================================== -->
+
+        <section class="seccion-music">
+
+            <div class="titulo-seccion-music">
+
+                <span>♡</span>
+
+                <div>
+                    <h2>songs for vale</h2>
+
+                    <p>
+                        canciones que javi quiere compartir con vale
+                    </p>
+                </div>
+
+            </div>
+
+            <div
+                class="lista-music"
+                id="lista-vale"
+            ></div>
+
+        </section>
+
+
+        <!-- =================================================
+             SONGS FOR JAVI
+        ================================================== -->
+
+        <section class="seccion-music">
+
+            <div class="titulo-seccion-music">
+
+                <span>♡</span>
+
+                <div>
+                    <h2>songs for javi</h2>
+
+                    <p>
+                        canciones que vale quiere compartir con javi
+                    </p>
+                </div>
+
+            </div>
+
+            <div
+                class="lista-music"
+                id="lista-javi"
+            ></div>
+
+        </section>
+
+
+        <!-- =================================================
+             SONGS FOR BOTH
+        ================================================== -->
+
+        <section class="seccion-music">
+
+            <div class="titulo-seccion-music">
+
+                <span>✦</span>
+
+                <div>
+                    <h2>songs that remind us of both</h2>
+
+                    <p>
+                        canciones que nos recuerdan a las dos
+                    </p>
+                </div>
+
+            </div>
+
+            <div
+                class="lista-music"
+                id="lista-juntas"
+            ></div>
+
+        </section>
+
+
+        <!-- =================================================
+             ESTADO VACÍO
+        ================================================== -->
+
+        <div
+            class="sin-music"
+            id="sin-music"
+        >
+
+            <span>♫</span>
+
+            <p>
+                todavía no hay canciones aquí
+            </p>
+
+            <small>
+                agreguen una canción para comenzar
+            </small>
+
+        </div>
+
+
+        <!-- =================================================
+             BOTÓN
+        ================================================== -->
+
+        <button
+            type="button"
+            class="agregar"
+            id="boton-agregar-music"
+        >
+            + agregar canción
+        </button>
+
+
+        <!-- =================================================
+             FORMULARIO
+        ================================================== -->
+
+        <form
+            class="formulario-music"
+            id="formulario-music"
+        >
+
+            <label for="nombre-cancion">
+                Canción
+            </label>
+
+            <input
+                type="text"
+                id="nombre-cancion"
+                placeholder="Ej: About You"
+                required
+            >
+
+
+            <label for="artista-cancion">
+                Artista
+            </label>
+
+            <input
+                type="text"
+                id="artista-cancion"
+                placeholder="Ej: The 1975"
+                required
+            >
+
+
+            <label for="seccion-music">
+                ¿Dónde va?
+            </label>
+
+            <select id="seccion-music">
+
+                <option value="vale">
+                    songs for vale
+                </option>
+
+                <option value="javi">
+                    songs for javi
+                </option>
+
+                <option value="juntas">
+                    songs that remind us of both
+                </option>
+
+            </select>
+
+
+            <label for="agregada-por">
+                Agregada por
+            </label>
+
+            <select id="agregada-por">
+
+                <option value="vale">
+                    vale
+                </option>
+
+                <option value="javi">
+                    javi
+                </option>
+
+            </select>
+
+
+            <label for="nota-cancion">
+                Nota
+            </label>
+
+            <textarea
+                id="nota-cancion"
+                placeholder="¿Por qué esta canción es especial?"
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="guardar"
+                id="guardar-music"
+            >
+                guardar canción
+            </button>
+
+        </form>
+
+
+        <a
+            class="volver"
+            href="index.html"
+        >
+            ← volver al inicio
+        </a>
+
+    </main>
+
+
+    <script src="music.js"></script>
+
+</body>
+</html>
